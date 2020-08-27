@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
     <link rel="icon" href="images/google_icon-icons.com_62736.ico" />
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="navbar">
-      <ul class="leftside">
-        <a href="#" class="leftside">About</a>
-        <a href="#" class="leftside">Store</a>
-      </ul>
-      <ul class="top-right">
-        <a href="#" class="rightside">Images</a>
-        <a href="#" class="rightside">Gmail</a>
-      </ul>
-      <div class="dropdown">
-        <a href="#"
+    <!--Navbar-->
+    <ul>
+      <li><a href="about.asp" class="top-left">About</a></li>
+      <li><a href="store.asp" class="top-left">Store</a></li>
+      <li>
+        <button
+          class="top-right"
+          style="
+            color: white;
+            background-color: #3f76d3;
+            border-radius: 3px;
+            height: 30px;
+            width: 70px;
+            border-style: none;
+            position: relative;
+            bottom: 5px;
+          "
+        >
+          Sign in
+        </button>
+      </li>
+      <li>
+        <a href="apps.asp" class="top-right"
           ><img
-            height="40px"
-            width="40px"
             src="images/1492790848-70menu_84220.png"
-            alt="supposed to be the apps drop down menu logo"
+            alt="app drop-down icon"
+            style="height: 40px; width: 40px; position: relative; bottom: 10px"
         /></a>
-      </div>
-      <div class="sign-in">
-        <button class="sign-in-button">Sign in</button>
-      </div>
-    </div>
+      </li>
+      <li><a href="images.asp" class="top-right">Images</a></li>
+      <li><a href="gmail.asp" class="top-right">Gmail</a></li>
+    </ul>
+    <!--End of navbar-->
 
-    <div class="center">
+    <!--Center of page with logo, search form, and buttons.-->
+    <div class="logo">
       <img src="images/googlelogo_color_272x92dp.png" alt="Google logo" />
     </div>
-    <div class="searchbox">
-      <input
-        type="search"
-        name="searchbar"
-        id="search-input"
-        class="google-search-bar"
-      />
+    <div class="search-area">
+      <form action="google.search.wtfaid.lol">
+        <input type="text" class="google-search-bar" />
+      </form>
     </div>
     <div class="buttons">
-      <button class="gbut">Google Search</button>
-      <button class="gbut">I'm Feeling Lucky</button>
+      <ul>
+        <li id="g-search"><button class="gbut">Google Search</button></li>
+        <li id="eastwood"><button class="gbut">I'm Feeling Lucky</button></li>
+      </ul>
     </div>
     <p>
       Video chat with your friends on the Nest Hub Max from the
