@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+}
+
+body {
+    background-color: #fff;
+}
+
+body, input, button {
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    color: #222;
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:visited {
+    color: #222;
+}
+
+.as {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.gias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gi {
+    margin-right: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav-but {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    line-height: normal;
+    height: 35px;
+    color: #5f6368;
+    opacity: 1;
+    margin-top: 5px;
+    margin-right: 10px; 
+}
+
+.sign-but {
+    display: flex;
+    background-color: rgb(26, 115, 232);
+    background-clip: border-box;
+    background-origin: padding-box;
+    border: 1px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 8px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+    line-height: 16px;
+    height: 35px;
+}
+
+.sign-in {
+    color: #fff;
+}
+
+.sign-in:visited {
+    color: #fff;
+}
+
+.ntd {
+    text-decoration: none;
+}
+
+.ntd:hover {
+    text-decoration: underline;
+}
+
+.logospace {
+    display: flex;
+    flex-direction: column;
+    height: 298px;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    flex-shrink: 0;   
+}
+
+.logoimage {
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top:auto;
+}
+
+.input-wrapper {
+    width: auto;
+    max-width: 584px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.input-wrapper:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
