@@ -15,13 +15,21 @@ body, input, button {
     color: #222;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
 .template {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.header {
+header {
     display: flex;
     height: 60px;
     flex-shrink: 0;
@@ -59,10 +67,11 @@ a:visited {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-right: 1em;
 }
 
 .gi {
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: 13px;
     cursor: pointer;
 }
@@ -74,9 +83,9 @@ a:visited {
     align-items: center;
 }
 
-svg {
+.gb_Ve {
     line-height: normal;
-    height: 35px;
+    height: 25px;
     color: #5f6368;
     opacity: 1;
     margin-top: 5px;
@@ -92,12 +101,13 @@ svg {
     color: #fff;
     cursor: pointer;
     margin-left: 8px;
+    margin-right: 1em;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
     min-width: 96px;
     line-height: 16px;
-    height: 35px;
+    height: 34px;
 }
 
 .sign-in {
@@ -131,6 +141,7 @@ svg {
     position: relative;
     height: 100%;
     margin-top:auto;
+    padding-bottom: 1em;
 }
 
 .input-wrapper {
@@ -143,11 +154,135 @@ svg {
     border-radius: 24px;
     z-index: 3;
     height: 44px;
-    margin: 0 auto;
+    margin: 1em auto;
+    flex-direction: row;
+
 }
 
 .input-wrapper:hover {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
+}
+
+.mag-glass {
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.25em;
+    padding-top: 2px;
+}
+
+.mag {
+    height: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex: 3 1 auto;
+    flex-wrap: wrap;
+    width: max-content;
+}
+
+.searchbar {
+    font-size: 16px;
+    height: 34px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: .4em 0 0 .8em;
+    display: flex;
+    flex: 100%;
+    outline: none;
+    width: fit-content;
+    justify-content: center;
+}
+
+.mic {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 1em;
+}
+
+.micsvg {
+    height: 1.7em;
+    cursor: pointer;
+}
+
+.submit-but {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.MRem {
+    margin-right: .5em;
+}
+
+.MLem {
+    margin-left: .5em;
+}
+
+.trans-but {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    height: 36px;
+    min-width: 54px;
+    padding: 0 16px;
+}
+
+.trans-but:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 /10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.free {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    align-content: center;
+    padding: 0 1.5em .5em 2em;
+    height: 2em;
+    
+}
+
+.abh {
+    display: flex;
+    min-width: 30%;
+    justify-content: flex-start;
+}
+
+.fna {
+    color: rgb(112, 117, 122);
+    padding: 0 16px;
+}
+
+.fna:visited {
+    color: rgb(112, 117, 122);
+}
+
+#leaf {
+    height: 1em;
+}
+
+.pts {
+    display: flex;
+    min-width: 30%;
+    justify-content: flex-end;
 }
